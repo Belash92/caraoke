@@ -1,0 +1,127 @@
+header{
+    background-color: aliceblue;
+}
+header h1 {
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 30px 30px 30px 10px;
+    clear: both;
+}
+nav {
+    background-color: firebrick;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+}
+nav li {
+    float: left;
+    list-style: none;
+}
+nav a {
+    display: block;
+    color: #000;
+    padding: 10px 25px;
+    text-decoration: none;
+    border-right: 1px solid;
+}
+nav li:last-child a {
+    border-right: none;
+}
+nav a:hover {
+    font-weight: bold;
+}
+nav::after {
+     content: " ";
+    display: table;
+    clear: both;
+}
+.wrapper {
+    background-color: antiquewhite;
+}
+#sidebar1 {
+    float: left;
+    width: 20%;
+    padding: 0 10px 0 20px;
+}
+#sidebar2 {
+    float: left;
+    width: 20%;
+    padding: 0 20px 0 10px;
+}
+#article{
+    background-color: azure;
+    border-left: 1px solid burlywood;
+    border-right: 1px solid               burlywood;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding: 15px;
+    width: 60%;
+}
+#article:after{
+    clear:both;
+    display:table;
+    content: " ";
+}
+.page-titly {
+    text-align: center;
+}
+.slider-container {
+    position: relative;
+    width: 600px;
+    height: 400px;
+
+}
+.slider {
+    display: flex;
+    transition: transition 0.5s;
+}
+.slider img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.prev-button,
+.next-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    color: forestgreen;
+}
+.prev-button {
+    left: 10px;
+
+}
+.next-button{
+    right: 10px;
+}
+.float-left{
+    width: 33%;
+    margin: 0 auto;
+}
+.float-right{
+    width: 33%;
+    margin: 0 auto;
+}
+.center{
+    width: 33%;
+    margin: 0 auto;
+}
+.float-left, .center{
+    float: left;
+}
+.float-right {
+    float: right;
+}
+.center{
+    text-align: center;
+}
+.center > img{
+    width: 480px;
+    border: 3px solid salmon;
+    border-radius: 50px;
+}
